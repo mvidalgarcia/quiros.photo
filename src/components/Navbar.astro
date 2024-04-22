@@ -1,0 +1,42 @@
+<nav class="menu">
+  <div class="menu-item">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Sobre mi</a></li>
+      <li><a href="#">Contacto</a></li>
+    </ul>
+  </div>
+  <div class="menu-item">logo</div>
+  <div class="menu-item">
+    <ul>
+      <li><a href="#">ig</a></li>
+      <li><a href="#">email</a></li>
+    </ul>
+  </div>
+</nav>
+<style>
+  .menu {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+
+    .menu-item {
+      text-align: center;
+    }
+
+    ul {
+      display: flex;
+      justify-content: center;
+    }
+
+    li {
+      padding: 0 1rem;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .menu {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

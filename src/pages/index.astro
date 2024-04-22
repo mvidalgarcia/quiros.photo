@@ -1,0 +1,32 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Sergio Fdz Quirós | Fotógrafo">
+  <main>
+    <h1>Sergio Fernández Quirós</h1>
+    <div>Hola soy Sergio, fotógrafo profesional 👋 📸</div>
+    <img
+      src="https://picsum.photos/seed/picsum/600/300"
+      width="80%"
+      alt="random image"
+    />
+  </main>
+</Layout>
+
+<style>
+  main {
+    margin: auto;
+    padding: 1rem;
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  /* TODO: create CSS variable for width */
+  @media (max-width: 600px) {
+    main {
+      width: 90%;
+    }
+  }
+</style>
